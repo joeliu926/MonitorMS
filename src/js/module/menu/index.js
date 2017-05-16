@@ -27,8 +27,8 @@ class SiderMenu extends React.Component {
                 </SubMenu>
                 <SubMenu key="targetManagement" title={<span><Icon type="notification" />目标管理</span>}>
                     <Menu.Item key="targetSet"><Link to="/targetManagement/targetSet" >目标设定</Link></Menu.Item>
-                    <Menu.Item key="targetInfo"><Link to="/targetInfo" >目标信息</Link></Menu.Item>
-                    <Menu.Item key="targetSearch"><Link to="/targetSearch" >目标搜索</Link></Menu.Item>
+                    <Menu.Item key="targetInfo"><Link to="/targetManagement/targetInfo" >目标信息</Link></Menu.Item>
+                    <Menu.Item key="targetSearch"><Link to="/targetManagement/targetSearch" >目标搜索</Link></Menu.Item>
                 </SubMenu>
                 <SubMenu key="dataCube" title={<span><Icon type="notification" />数据魔方</span>}>
                     <Menu.Item key="targetAnalysis"><Link to="/targetAnalysis" >目标分析</Link></Menu.Item>
