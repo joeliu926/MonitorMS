@@ -22,7 +22,7 @@ BNG_Project
 
 进入项目，在根目录下执行
 node dev
-启动后访问：localhost:8080/
+启动后访问：localhost:8088/
 
 ===========
 部署模式
