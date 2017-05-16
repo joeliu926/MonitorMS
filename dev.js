@@ -20,7 +20,7 @@ var app = new webpackDevServer(compiler, {
     publicPath: webpackCfg.output.publicPath
 });
 
-app.listen(8080, "localhost", function (err) {
+app.listen(8088, "localhost", function (err) {
     if (err) {
         console.log(err);
     }

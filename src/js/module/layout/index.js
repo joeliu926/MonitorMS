@@ -10,6 +10,10 @@ const SubMenu = Menu.SubMenu;
 const MenuItem = Menu.Item;
 function itemRender(route, params, routes, paths) {
     const last = routes.indexOf(route) === routes.length - 1;
+    if(route.clickable=='false')
+    {
+        return <span>{route.breadcrumbName}</span>;
+    }
     return last ? <span>{route.breadcrumbName}</span> : <Link to={paths.join('/')}>{route.breadcrumbName}</Link>;
 }
 class Panel extends React.Component{
@@ -47,7 +51,7 @@ const LayoutPanel = ({ routes, params, children }) => (
             </Sider>
             <div style={{ padding: '0 24px 24px',padding: '0px 24px 24px',
                 display: 'flex',flexFlow: 'column', flex: 1}}>
-                <Breadcrumb routes={routes} params={params} style={{
+                <Breadcrumb  itemRender={itemRender} routes={routes} params={params} style={{
                     lineHeight: '24px',
                     padding: '12px 0'}} />
                 <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>

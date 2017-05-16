@@ -19,7 +19,7 @@ class RootRouters extends React.Component {
                 <Route name="home" breadcrumbName="首页" path="/" component={LayoutPanel}>
                     <IndexRedirect to="home" />
                     <Route name="home" path="home"  component={Home}/>
-                    <Route name="targetManagement" path="targetManagement" breadcrumbName="目标管理">
+                    <Route name="targetManagement" path="targetManagement" clickable="false" breadcrumbName="目标管理">
                          <Route name="targetSet" path="targetSet" breadcrumbName="目标设定" component={TargetSet}/>
                     </Route>
                     <Route name="table" path="table" breadcrumbName="table" component={TableDemo}/>
