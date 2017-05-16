@@ -55,7 +55,7 @@ class Panel extends React.Component {
             <div>
                 <div className="m-toolbar">
                     <div className="m-float-r">
-                      <span className="grid-count-text">WIFI热点 20 个</span>  <span className="grid-count-text">终端 200 台</span>   <span  className="grid-count-text">目标终端 50 台</span>
+                      <span className="grid-count-text">博客 200 篇</span>  <span className="grid-count-text">目标 50 篇</span>
                     </div>
                 </div>
                 <div>

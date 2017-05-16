@@ -27,16 +27,16 @@ class Panel extends React.Component {
         // 热度排名  类型 虚拟账号  数量  可疑目标数
         const columns = [
             {title: '热度排名', dataIndex: 'hot', key: 'hot'},
-            {title: '类型 ',dataIndex: 'name',key: 'name'},
-            {title: '虚拟账号', dataIndex: 'joinNumber', key: 'joinNumber'},
-            {title: '可疑目标数', dataIndex: 'targetNumber', key: 'targetNumber'},
-            {title: '位置', dataIndex: 'position', key: 'position'}
+            {title: '类型 ',dataIndex: 'type',key: 'type'},
+            {title: '虚拟账号', dataIndex: 'v-account', key: 'v-account'},
+            {title: '数量', dataIndex: 'number', key: 'number'},
+            {title: '可疑目标数', dataIndex: 'dubious', key: 'dubious'}
         ];
 
         const data = [
-            {key:_.getReactKey(),hot: 1,joinNumber:10, targetNumber:30,name: 'WIFI名称 01', position: '1层'},
-            {key:_.getReactKey(),hot:2, joinNumber:101,targetNumber:32,name: 'WIFI名称 02', position: '2层'},
-            {key:_.getReactKey(),hot:3, joinNumber:102,targetNumber:33, name: 'WIFI名称 03', position: '3层'}
+            {key:_.getReactKey(),hot: 1,type:'QQ','v-accoun':'123', number: '12', dubious: '100'},
+            {key:_.getReactKey(),hot:2,type:'Wchat','v-accoun':'AA', number: '45', dubious: '1002'},
+            {key:_.getReactKey(),hot:3,type:'WhatsApp','v-accoun':'VV', number: '56', dubious: '1003'}
         ];
 
         const rowSelection = {
