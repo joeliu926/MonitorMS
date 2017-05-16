@@ -1,0 +1,55 @@
+/**
+ * Created by gy on 2016/11/30.
+ */
+import React from 'react';
+import {Link } from 'react-router';
+import { Table,Menu,Icon  } from 'antd';
+const SubMenu = Menu.SubMenu;
+const MenuItem = Menu.Item;
+class Panel extends React.Component{
+    render() {
+        return (
+            <div className="main-wrapper">
+                <div className="layout-header">
+                    <div className="logo">Logo</div>
+                    智能管理系统
+                </div>
+                <div className="layout-center">
+                    <div className="layout-nav">
+                        <Menu mode="inline" theme="light" style={{width: '240px'}}>
+                            <SubMenu key="user" title={<span>
+                                <Icon type="user"/>
+                                <span>用户管理</span>
+                            </span>}>
+                                <MenuItem key="user-list">
+                                用户列表
+                                </MenuItem>
+                                <MenuItem key="user-add">
+                                添加用户
+                                </MenuItem>
+                            </SubMenu>
+
+                            <SubMenu key="book" title={<span>
+                                <Icon type="book"/>
+                                <span>图书管理</span>
+                            </span>}>
+                                <MenuItem key="book-list">
+                                图书列表
+                                </MenuItem>
+                                <MenuItem key="book-add">
+                                添加图书
+                                </MenuItem>
+                            </SubMenu>
+                        </Menu>
+                    </div>
+                    <div className="layout-container">
+                        < div className="layout-page-wrapper">
+                          {this.props.children}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+};
+export default Panel;

@@ -1,0 +1,36 @@
+.distrinitions .more-select{
+    background:#fff;
+    border: 1px solid #ddd;
+    clear: both;
+    padding: 0 16px;
+    margin-bottom:8px;
+}
+.distrinitions .filter-box{
+    clear: both;
+    height:40px;
+    line-height: 40px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.distrinitions .filter-box .filter-box-l,.distrinitions .filter-box .filter-box-r{
+    display: block;
+    float: left;
+}
+.distrinitions .filter-box .filter-box-l{
+    width: 60px;
+    text-align: left;
+    color: #999;
+}
+.distrinitions .filter-box ul{
+    display: block;
+}
+.distrinitions .filter-box li{
+    display: block;
+    float: left;
+    padding: 0 20px;
+}
+.distrinitions .filter-box-item,.distrinitions .filter-box-item-label{
+    display: block;
+    float: left;
+}
+
+
